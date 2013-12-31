@@ -1,0 +1,17 @@
+{
+    "name": "yoye/ovh-sdk",
+    "require": {
+        "guzzle/http": "~3.7",
+        "symfony/options-resolver": "~2.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yoye",
+            "email": "y.aparici@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {"Yoye\\OVH\\": "src/"}
+    }
+}
