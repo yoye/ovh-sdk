@@ -2,6 +2,7 @@
     "name": "yoye/ovh-sdk",
     "require": {
         "guzzle/http": "~3.7",
+        "guzzle/service": "~3.7",
         "symfony/options-resolver": "~2.3"
     },
     "license": "MIT",

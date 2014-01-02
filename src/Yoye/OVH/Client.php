@@ -2,11 +2,11 @@
 
 namespace Yoye\OVH;
 
-use Guzzle\Http\Client as BaseClient;
+use Guzzle\Service\Client as ServiceClient;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class Client extends BaseClient
+class Client extends ServiceClient
 {
 
     public static function factory($config = array())
