@@ -3,6 +3,7 @@
 namespace Yoye\OVH;
 
 use Guzzle\Service\Client as ServiceClient;
+use Guzzle\Service\Description\ServiceDescription;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
@@ -22,6 +23,7 @@ class Client extends ServiceClient
             )
         ));
         $client->addSubscriber(new Plugin($config['application_key'], $config['application_secret'], $config['consumer_key']));
+        $client->setDescription(ServiceDescription::factory(realpath(__DIR__ . '/../../../config/description.json')));
 
         return $client;
     }

@@ -1,0 +1,14 @@
+{
+    "operations": {
+        "CreateJob": {
+            "httpMethod": "POST",
+            "uri": "sms/{serviceName}/jobs",
+            "parameters": {
+                "serviceName": {"location": "uri"},
+                "sender": {"location": "json"},
+                "message": {"location": "json"},
+                "receivers": {"location": "json"}
+            }
+        }
+    }
+}
